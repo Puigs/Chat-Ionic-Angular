@@ -10,7 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
-const config: SocketIoConfig = { url: '51.178.52.247:3001', options: {} };
+const config: SocketIoConfig = { url: 'localhost:3001', options: {} };
 
 @NgModule({
   declarations: [AppComponent],
