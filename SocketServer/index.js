@@ -3,7 +3,7 @@ let server = require('http').createServer(app);
 let io = require('socket.io')(server);
  
 io.on('connection', (socket) => {
- 
+  console.log("aaaa");
   socket.on('disconnect', function(){
     io.emit('users-changed', {user: socket.username, event: 'left'});   
   });
